@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Prochorow | Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="logo">
+                    <!-- LOGO HINZUGEFÜGT -->
+                    <img src="Logo.svg" alt="Logo" class="site-logo">
+                    <a href="index.html">Thomas Prochorow</a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="lebenslauf.html" class="nav-link">Lebenslauf</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="interessen.html" class="nav-link">Interessen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="kontakt.html" class="nav-link active">Kontakt</a>
+                    </li>
+                </ul>
+                
+                <div class="burger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Kontakt Hero -->
+    <section class="hero" style="padding: 150px 0 80px; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Kontakt</h1>
+                <p class="hero-description" style="max-width: 600px;">
+                    Treten Sie mit mir in Kontakt für Fragen, Kooperationen oder Bewerbungsanfragen.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontaktinhalt -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-container">
+                <!-- Kontaktinformationen -->
+                <div class="contact-info">
+                    <div class="card">
+                        <h3 style="margin-bottom: 1.5rem;">Kontaktdaten</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Adresse</h4>
+                                <p>Pelikanstr. 61B<br>70378 Stuttgart<br>Deutschland</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Telefon</h4>
+                                <p>+49 15560 099594</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>E-Mail</h4>
+                                <p>thomas.prochorow@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <div>
+                                <h4>Sprachen</h4>
+                                <p>Deutsch (Muttersprache)<br>Russisch (Muttersprache)<br>Englisch (Gute Kenntnisse)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h3 style="margin-bottom: 1.5rem;">Verfügbarkeit</h3>
+                        <p>Ich bin derzeit auf der Suche nach einem Ausbildungsplatz zum <strong>Fachinformatiker für Anwendungsentwicklung</strong> ab September 2026.</p>
+                        <p style="margin-top: 1rem;">Für Bewerbungsgespräche und weitere Informationen stehe ich gerne zur Verfügung.</p>
+                    </div>
+                </div>
+                
+                <!-- Kontaktformular -->
+                <div class="contact-formular">
+                    <div class="card">
+                        <h3 style="margin-bottom: 1.5rem;">Nachricht senden</h3>
+                        <p style="margin-bottom: 2rem;">Senden Sie mir eine Nachricht und ich werde mich so schnell wie möglich bei Ihnen melden.</p>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Betreff" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Ihre Nachricht" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn" id="submitBtn">
+                                <span id="btnText">Nachricht senden</span>
+                                <span id="btnNote" style="display: none; font-size: 0.9rem; margin-top: 0.5rem; color: #64748b;">
+                                    (Funktionalität kommt mit Backend-Integration)
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <a href="index.html" style="color: white;">Thomas Prochorow</a>
+                </div>
+                
+                <p class="copyright">
+                    &copy; 2025 Thomas Prochorow. Alle Rechte vorbehalten.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Kontaktformular Simulation
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = document.getElementById('btnText');
+            const btnNote = document.getElementById('btnNote');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Zeige Hinweis an
+                    btnText.textContent = "Formular simuliert - funktioniert online!";
+                    btnNote.style.display = 'block';
+                    submitBtn.style.backgroundColor = '#10b981';
+                    
+                    // Reset nach 3 Sekunden
+                    setTimeout(function() {
+                        btnText.textContent = "Nachricht senden";
+                        btnNote.style.display = 'none';
+                        submitBtn.style.backgroundColor = '';
+                        contactForm.reset();
+                    }, 3000);
+                    
+                    // In der Live-Version hier AJAX-Request an Backend senden
+                    console.log("Formular abgeschickt - im Live-Betrieb würde hier die Nachricht gesendet werden");
+                });
+            }
+        });
+    </script>
+</body>
+</html>
